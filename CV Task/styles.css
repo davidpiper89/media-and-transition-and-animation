@@ -1,0 +1,105 @@
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .container1 {background-color: lightblue;}
+    .container1 {flex-direction: column;}
+    .transitions {transform: rotate(90deg); overflow: scroll;}}
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+    .container1 {background-color: lightcoral;}
+    .container1 {flex-wrap:wrap;}
+    }
+/* Desktop */
+@media only screen and (min-width: 992px) {
+    .container1 {background-color: lightgreen;}}
+
+/* Font */
+body {font-family: Georgia; padding:1%; font-size: 16px;}
+
+/* Header and navbar */
+.header {background-color: #99ccff; }
+.title {font-size: 20px; text-align: center; padding-top:8px; border-top: 10px solid #cccccc;font-style: italic; padding-bottom:8px; margin-bottom: 2px; color:#c3a343; font-weight: bold;text-decoration: underline;}
+.name {font-size: 48px; text-transform: uppercase; letter-spacing: 3px; text-align: center; margin-top: 0px; margin-bottom: 0px; color:black; font-weight: bolder;}
+.profession {text-align: center;}
+ hr {height: 2px; background-color: #cccccc; border-color: #cccccc;margin-bottom: 0px;}
+.navbar {text-align: center; padding-bottom: 12px;}
+.personal {margin-right: 20px;}
+.personal:hover {color: #FF0000;}
+.skills {margin-right: 20px;}
+.skills:hover {color: #FF0000;}
+.workhist {margin-right: 20px;}
+.workhist:hover {color: #FF0000;}
+.education:hover {color: #FF0000;}
+
+/*Headings */
+
+h2 {text-align: center;text-decoration: underline; margin-top: 0px;padding-top: 15px;} 
+h4 {font-style: italic;}
+
+/* personal demographics */
+
+.container1 {display:flex; justify-content: space-between;}
+.box1 {min-width: 25%;}
+.box2 {min-width: 25%;}
+.box3 {min-width: 25%;}
+
+/* Skills transitions */
+
+.ratingscale {display: flex; padding-left: 25%; justify-content: space-between;}
+
+.skillstrans {background-color: aqua;}
+
+/* .skillstrans:hover .one .two .three .four{width: 80%; transition-duration: 500ms;transition-timing-function:ease-in-out;} */
+/* .transitions:hover .five{background-color: purple; width: 100%;transition-duration: 500ms;transition-timing-function:ease-in-out;}
+.transitions:hover .six{ background-color: black; color: white; width: 50%;transition-duration: 500ms;transition-timing-function:ease-in-out;} */
+
+.one {width: 80%; transition-duration: 500ms;transition-timing-function:ease-in-out;}
+.two {width: 80%;transition-duration: 500ms;transition-timing-function:ease-in-out;}
+.three {width: 80%;transition-duration: 500ms;transition-timing-function:ease-in-out;}
+.four {width: 80%;transition-duration: 500ms;transition-timing-function:ease-in-out;}
+.five {width: 100%;transition-duration: 500ms;transition-timing-function:ease-in-out;}
+.six {width: 50%;transition-duration: 500ms;transition-timing-function:ease-in-out;}
+
+
+.one:hover {background-color: red;}
+.two:hover {background-color: green;}
+.three:hover {background-color: blue;}
+.four:hover {background-color: yellow;}
+.five:hover {background-color: purple;}
+.six:hover {background-color: black; color: white}
+
+/* Work History Animation */
+
+/* .animation {display: flex;position:relative} 
+.child {background-color: white; height: 300px;width: 300px; transition-duration: 0.5s;transition-timing-function:ease-in-out;}
+.current {position:absolute; left:25%; opacity: 0; visibility: hidden; transition-duration: 0.5s;transition-timing-function:ease-in-out;}
+.current-1 {position:absolute;left:25%; opacity: 0; visibility: hidden; transition-duration: 0.5s;transition-timing-function:ease-in-out;}
+.current-2 {position:absolute;left:25%; opacity: 0; visibility: hidden; transition-duration: 0.5s;transition-timing-function:ease-in-out;}
+
+.animation:hover .child{background-color: red; animation: workfade 2.5s ease-in-out;}
+.animation:hover .current{visibility: visible; opacity: 1; animation: workfade 2.5s ease-in-out;}
+.animation:hover .current-1{visibility: visible; opacity: 1; animation: workfade 2.5s ease-in-out;}
+.animation:hover .current-2{visibility: visible; opacity: 1; animation: workfade 2.5s ease-in-out;}
+
+@keyframes workfade {
+    25% {}
+    50% {}
+    75% {}  
+} */
+
+/*think i cant do this - no time left */
+
+.animation {background-color: red; width: 300px; height: 300px;}
+.task {background-color: blue; width: 50%; height:50%;transition: transform 1s ease-in-out; }
+
+.animation:hover .task {animation: animate 1s ease-in-out}
+
+@keyframes animate {
+    0% {transform: translateX(0)}
+    33% {transform: translateX(100%)}
+    66% {transform: translateX(100%) translateY(100%)}
+    100% {transform: translateY(100%)}
+    
+}
+
+    
